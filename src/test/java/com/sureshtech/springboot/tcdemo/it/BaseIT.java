@@ -15,7 +15,7 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @Testcontainers
-public class BaseIT {
+public abstract class BaseIT {
 	
 	@Autowired
 	protected TestRestTemplate testRestTemplate ;
