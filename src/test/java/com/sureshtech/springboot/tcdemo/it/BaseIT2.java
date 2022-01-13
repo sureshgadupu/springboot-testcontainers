@@ -18,7 +18,7 @@ import org.testcontainers.junit.jupiter.Testcontainers;
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 @Testcontainers
 @ContextConfiguration(initializers = BaseIT2.TestEnvInitializer.class)
-public class BaseIT2 {
+public abstract class BaseIT2 {
 	
 	@Autowired
 	protected TestRestTemplate testRestTemplate ;
